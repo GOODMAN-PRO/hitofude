@@ -49,9 +49,10 @@ $manifest.chapters += [pscustomobject]@{
 $manifest.chapters = @($manifest.chapters | Sort-Object n)
 [IO.File]::WriteAllText($manifestPath, ($manifest | ConvertTo-Json -Depth 5), [Text.UTF8Encoding]::new($false))
 
-# Continuity log (append-only)
+# Continuity log (append-only; skip if this chapter already logged — republish case)
 $breakdown = Get-Content (Join-Path $repo "production\$ch\breakdown.md") -Raw -Encoding UTF8
-if ($breakdown -match '(?s)##\s+CONTINUITY NOTES\s*\r?\n(.*?)\z') {
+$logNow = Get-Content (Join-Path $repo 'continuity\log.md') -Raw -Encoding UTF8
+if ($logNow -notmatch "—\s*Chapter\s+$Chapter\b" -and $breakdown -match '(?s)##\s+CONTINUITY NOTES\s*\r?\n(.*?)\z') {
     $entry = "`n## $(Get-Date -Format 'yyyy-MM-dd') — Chapter $Chapter`: $Title`n`n$($Matches[1].Trim())`n"
     Add-Content (Join-Path $repo 'continuity\log.md') $entry -Encoding UTF8
 }
