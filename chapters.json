@@ -21,6 +21,14 @@
       "pages": 28,
       "cover": "chapters/ch02/cover.jpg",
       "published": "2026-08-14"
+    },
+    {
+      "n": 3,
+      "slug": "ch03",
+      "title": "NUKADOKO",
+      "pages": 27,
+      "cover": "chapters/ch03/cover.jpg",
+      "published": "2026-08-14"
     }
   ]
 }
