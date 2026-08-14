@@ -35,7 +35,16 @@ renders a finished page block.
    downscales raw PNGs to `chapters/chNN/pNN.jpg` (~900px wide, JPEG q75, ~200 KB) + `cover.jpg`,
    appends the chapter entry to `chapters.json`, appends CONTINUITY NOTES to `continuity/log.md`
    (date-stamped), commits **web-sized images + text only** (raw PNGs are gitignored), pushes.
-8. **Verify + repeat.** Confirm the push and the live URL. Start the next cycle at step 0.
+8. **Check placement (independent).** Spawn a fresh-context CHECKER agent — never the agent that
+   wrote or drew the chapter. It: (a) runs `pwsh scripts/check-placement.ps1` (file completeness,
+   contiguous page numbering, image widths/sizes, manifest consistency, continuity log entry,
+   git clean + pushed, raws untracked, live URLs serving 200 with propagation retries);
+   (b) OPENS the published first page, splash page, and last page JPEGs and confirms each is the
+   right content for this chapter (correct chapter caption on p01, dialogue legible at web size,
+   pages in story order); (c) loads the live site and confirms the new chapter appears first on
+   the index and its reader deep-link works. Any violation goes back to the orchestrator to fix
+   and re-publish — the cycle does not end on a failing check.
+9. **Repeat.** Start the next cycle at step 0.
 
 ## Invariants (do not renegotiate these mid-loop)
 

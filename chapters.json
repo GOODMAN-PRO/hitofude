@@ -5,5 +5,14 @@
     "tagline": "The whole city can see your rank. Nobody can see you.",
     "author": ""
   },
-  "chapters": []
+  "chapters": [
+    {
+      "n": 1,
+      "slug": "ch01",
+      "title": "SEAT FORTY-ONE",
+      "pages": 27,
+      "cover": "chapters/ch01/cover.jpg",
+      "published": "2026-08-14"
+    }
+  ]
 }
