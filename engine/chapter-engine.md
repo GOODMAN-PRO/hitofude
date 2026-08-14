@@ -19,6 +19,7 @@ Its output is one file: `production/chNN/breakdown.md`.
 - **Every chapter contains a domestic beat**: food, laundry, a bandage, a bus ride, dishes, a bento, an umbrella. It gets real page time, not a cutaway.
 - Fights and magic are seasoning: at most one short System/duel/Tower scene per chapter, and it must pay a character beat. The quiet is the meal.
 - **THERE ARE NO SILENT PAGES.** Every page carries dialogue, page 1 included. A quiet moment gets three bubbles, never zero. Do not designate any page as "the silent page."
+- **The final page's last panel carries `- CAPTION: CH N — END`** (small box). The linter enforces it.
 
 ## Breakdown grammar (strict — scripts parse this)
 

@@ -46,6 +46,8 @@ if ($splashes.Count -ne 1) { $violations += "Splash count $($splashes.Count) —
 $chibiTotal = ($nums | ForEach-Object { $pages[$_].chibi } | Measure-Object -Sum).Sum
 if ($chibiTotal -lt 3) { $violations += "Only $chibiTotal [CHIBI] panels — need >=3 per chapter" }
 if ($text -notmatch '##\s+CONTINUITY NOTES') { $violations += "Missing ## CONTINUITY NOTES section" }
+$lastBlock = [regex]::Matches($text, '(?ms)^##\s+PAGE\s+\d+[^\r\n]*\r?\n(.*?)(?=^##\s|\z)') | Select-Object -Last 1
+if ($lastBlock -and $lastBlock.Value -notmatch 'CAPTION:\s*CH\s*\d+\s*[-—–]+\s*END') { $violations += "Final page missing '- CAPTION: CH N — END' box" }
 
 foreach ($n in $nums) {
     $p = $pages[$n]; $id = 'p{0:d2}' -f $n

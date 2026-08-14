@@ -598,6 +598,7 @@ PANEL 6 [small]: Upstairs. Her room. The wrapped daikon set down on the desk nex
 PANEL 7 [tall]: The notebook open at the page for THE NINTH — written once, scratched out once, nothing under it. She looks at it. She writes nothing. She closes it and smells her hands again instead.
 - (Sayo, thought): "NOTHING TO WRITE. NOTHING HAPPENED."
 - (Sayo, thought): "STIR IT TWICE. MORNING AND EVENING."
+- CAPTION: CH 3 — END
 
 ## COVER NOTES
 Split down the middle, one continuous line through both figures. Left: Sayo public — sleeve down over the knuckles, hair down, two highlights, the folded delivery slip held out at arm's length like a receipt. Right: Kaoru private — cat-print apron, one strap twisted, collar hook undone, cowlick doubled, both arms grey with bran to the wrist, the wooden paddle held out toward her across the split. The split line passes through the paddle. Late-winter arcade greys, ~40% white, a single labelled crock lid in the lower foreground reading FRIDAY. GOOD.
