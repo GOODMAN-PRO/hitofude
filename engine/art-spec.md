@@ -5,6 +5,8 @@ Everything between the BEGIN/END markers is pasted VERBATIM into every single im
 <!-- BEGIN ART SPEC -->
 ART SPEC — this is a MANGA PAGE, not an illustration. Follow every section.
 
+STYLE ANCHOR — the finished page must look like a SCAN OF A PRINTED 2010s SHOUJO SLICE-OF-LIFE MANGA VOLUME: flat black ink, visible halftone screentone dots, generous pure white paper. It must NOT look like a digital painting, an anime keyframe, a 3D render, or glossy AI art. Flat print, never rendered light. Every area of the page is one of exactly three things: pure black ink, pure white paper, or a visible dot-screentone texture. If any region reads as smooth continuous grayscale, the page is wrong.
+
 PAGE CONSTRUCTION — DO THIS FIRST:
 - Divide the sheet into separate rectangular panels with solid black borders and clean white gutters between them. The exact panel count and contents come from the PAGE SCRIPT below — draw every panel it lists, in order.
 - The page is a grid of separate camera shots reading LEFT-TO-RIGHT, TOP-TO-BOTTOM. It is never one continuous illustration. (Exception: a page explicitly marked SPLASH is a single full-bleed panel — and it still carries all its speech bubbles.)
@@ -21,11 +23,13 @@ FACES — people are the subject:
 - Faces are large in frame: conversation shots crop at chest or closer. Expressions do the acting — big readable emotion changes panel to panel.
 
 WHITE SPACE — roughly 40% of the page reads as white:
-- Achieve this with EMPTY OR MINIMAL BACKGROUNDS INSIDE panels — plain white behind characters, or a sparse halftone-dot or tone-square backdrop. NEVER achieve it with fewer panels, fewer bubbles, or empty panels.
-- Full environment drawings (rooms, streets) appear in at most 1-2 establishing panels per page; everywhere else the background falls away to white or light tone.
+- The DEFAULT background inside a panel is PURE WHITE PAPER, or a sparse decorative screentone backdrop (dot grid, tone squares) — nothing else. Characters float on white; that is the house look.
+- A drawn environment (room, street, furniture) may appear in AT MOST 1-2 panels per page — only where the script's description names the location. Every other panel: white or decorative tone behind the figures. If in doubt, leave it white.
+- NEVER achieve white space with fewer panels, fewer bubbles, or empty panels — only with emptier backgrounds.
 
 LINE:
 - Clean, even-weight black ink line, shoujo slice-of-life finish. Crisp and confident, slightly thicker on figure outlines, fine for hair and details. No sketchiness, no crosshatch rendering, no painterly shading.
+- FLATNESS LAW: faces, skin, hair, clothes and objects are FLAT — outline plus flat fill plus at most one screentone shadow shape. No gradient shading on skin, no soft light on hair, no rendered fabric folds, no ambient occlusion, no depth-of-field blur, no photographic lighting of any kind. Simple beats detailed everywhere.
 
 EYES:
 - Large, simply-drawn eyes with heavy upper lash line and small highlight. Blush is drawn as 2-4 short diagonal hatch strokes on the cheek. Comic sweat drops beside the temple. Emotion marks allowed: anger cross, bead of sweat, sparkle.
@@ -51,6 +55,8 @@ SFX:
 BANNED — never do any of these:
 - Color. (Black, white, and screentone gray only.)
 - Photorealism, painterly rendering, soft airbrushed grayscale, 3D-render look, AI-gloss.
+- Digital-painting or anime-keyframe rendering: gradient-shaded skin or hair, glossy highlights, rendered lighting, smooth gray shading anywhere. Mid-tones must be visible screentone DOTS, never smooth gray.
+- Fully drawn environments in more than 2 panels of a page. The default backdrop is white paper or decorative tone.
 - A single-illustration page when the script lists multiple panels.
 - A page, or more than one panel, with no people in it.
 - A page with zero speech bubbles, or fewer bubbles than the script lists.

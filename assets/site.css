@@ -120,7 +120,7 @@ body.bar .topbar{transform:none}
 .chnav span{color:var(--muted);opacity:.6}
 
 /* scroll mode */
-body.mode-scroll .pages{padding-top:calc(8px + env(safe-area-inset-top))}
+body.mode-scroll .pages{padding-top:calc(48px + env(safe-area-inset-top))} /* clears the fixed topbar */
 
 /* paging mode */
 body.mode-page{overflow:hidden;height:100vh;height:100svh}
