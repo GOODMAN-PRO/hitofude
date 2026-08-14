@@ -28,7 +28,13 @@ foreach ($f in $raws) {
         $bmp = [Drawing.Bitmap]::new($Width, $h)
         $g = [Drawing.Graphics]::FromImage($bmp)
         $g.InterpolationMode = [Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
-        $g.DrawImage($src, 0, 0, $Width, $h)
+        # Force strict B&W print look: luminance grayscale kills any spot-color drift in raws
+        $cm = [Drawing.Imaging.ColorMatrix]::new(@(
+            @(0.299, 0.299, 0.299, 0, 0), @(0.587, 0.587, 0.587, 0, 0),
+            @(0.114, 0.114, 0.114, 0, 0), @(0, 0, 0, 1, 0), @(0, 0, 0, 0, 1)))
+        $ia = [Drawing.Imaging.ImageAttributes]::new()
+        $ia.SetColorMatrix($cm)
+        $g.DrawImage($src, [Drawing.Rectangle]::new(0, 0, $Width, $h), 0, 0, $src.Width, $src.Height, [Drawing.GraphicsUnit]::Pixel, $ia)
         $g.Dispose()
         $out = Join-Path $webDir ($f.BaseName + '.jpg')
         $bmp.Save($out, $jpegCodec, $encParams)
