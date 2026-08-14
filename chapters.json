@@ -29,6 +29,14 @@
       "pages": 27,
       "cover": "chapters/ch03/cover.jpg",
       "published": "2026-08-14"
+    },
+    {
+      "n": 4,
+      "slug": "ch04",
+      "title": "GREET DOWN, NEVER UP",
+      "pages": 27,
+      "cover": "chapters/ch04/cover.jpg",
+      "published": "2026-08-15"
     }
   ]
 }
