@@ -37,6 +37,14 @@
       "pages": 27,
       "cover": "chapters/ch04/cover.jpg",
       "published": "2026-08-15"
+    },
+    {
+      "n": 5,
+      "slug": "ch05",
+      "title": "FOUR IN THE MORNING",
+      "pages": 27,
+      "cover": "chapters/ch05/cover.jpg",
+      "published": "2026-08-15"
     }
   ]
 }
